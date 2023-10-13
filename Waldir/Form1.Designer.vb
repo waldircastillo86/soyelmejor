@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Button1 = New Button()
         Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -44,11 +45,21 @@ Partial Class Form1
         Button2.Text = "cambios reales"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(375, 248)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(164, 23)
+        Button3.TabIndex = 2
+        Button3.Text = "cambio real 2"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Name = "Form1"
@@ -58,4 +69,5 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
