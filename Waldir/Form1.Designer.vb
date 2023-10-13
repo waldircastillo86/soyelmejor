@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Button1
@@ -34,11 +35,21 @@ Partial Class Form1
         Button1.Text = "Soy el mejor"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(361, 195)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(178, 23)
+        Button2.TabIndex = 1
+        Button2.Text = "cambios reales"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Name = "Form1"
         Text = "Form1"
@@ -46,4 +57,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
